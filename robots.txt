@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js/
+Disallow: /style/
+Disallow: /cgi-bin/
+
+Sitemap: https://24run.ru/sitemap.xml
+Host: 24run.ru
