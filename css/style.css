@@ -12990,6 +12990,9 @@ footer .icon-adlaim {
   }
 }
 @media (max-width: 620px) {
+  header .row {
+    flex-direction: column;
+  }
   .top-menu {
     margin: 10px 0 0 0;
   }
@@ -13024,16 +13027,40 @@ footer .icon-adlaim {
   }
   .callback {
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .callback a {
+    display: block;
+  }
+  .callback .red {
+    margin-bottom: 16px;
+  }
+  .callback .red span::before{
+    display: none;
+  }
+  .callback .red span::after{
+    display: none;
   }
   .callback .phone {
-    font: 600 32px "dinpro";
+    margin-bottom: 30px;
+    font: 600 20px "dinpro";
     padding: 0 0 10px;
   }
   .first .go {
     font: 300 24px/40px "panton";
-    padding: 200px 0 0;
+    padding: 270px 0 0;
     letter-spacing: 2.5px;
   }
+  section .mouse.white {
+    border-color: transparent;
+  }
+
+  section .mouse.white:before {
+  background-color: transparent;
+  }
+
   .step-item {
     text-align: left;
     padding: 0 0 20px 10px;
@@ -13093,6 +13120,13 @@ footer .icon-adlaim {
   }
   footer {
     padding: 10px 0 0;
+  }
+  footer .row {
+    display: block;
+    text-align: center;
+  }
+  .footer-tar {
+    text-align: center;
   }
   .modal-open .modal-dialog {
     margin: 0;
