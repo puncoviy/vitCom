@@ -11263,6 +11263,12 @@ header a:visited {
   color: #fff;
   background: transparent !important;
 }
+header.black *{
+  color: #333;
+}
+header.black *:hover{
+  color: #333;
+}
 .logo-holder {
   margin-top: 5px;
 }
@@ -13135,4 +13141,50 @@ footer .icon-adlaim {
     font: 500 18px/24px "panton";
     padding: 0 0 15px;
   }
+}
+
+
+.table {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.table-header {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.table__header {
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__header-name {
+}
+.table__header-photo {
+}
+.table__header-quant {
+}
+.table__header-price {
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__row:nth-child(2n) {
+  background-color: #eaeaea;
+}
+
+.table__row-name {
+}
+.table__row-photo {
+}
+.table__row-quant {
+}
+.table__row-price {
 }
